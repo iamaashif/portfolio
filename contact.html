@@ -1,0 +1,191 @@
+<html>
+
+<head>
+  <title>Contacts</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: "Roboto condensed", "Arial";
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 82vh;
+      background: url(mandala.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .head {
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 8vh;
+      background-color: #25252b;
+    }
+
+    nav a {
+      color: rgb(189, 193, 198);
+      font-size: 20px;
+      text-decoration: none;
+      padding: 15px 40px;
+    }
+
+    nav a:hover {
+      background-color: #ffffff;
+      color: black;
+    }
+
+    .content1 {
+      display: flex;
+      flex-direction: column;
+      height: 60vh;
+      width: 30vw;
+      padding: 30px 0px 0px 40px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+    }
+
+    .red {
+      color: red;
+    }
+
+    input,
+    select {
+      margin: 10px 0;
+      padding: 10px;
+      color: black;
+      width: 50%;
+      border-radius: 10px;
+    }
+
+    input[type="date"] {
+      width: 20%;
+    }
+
+    fieldset {
+      margin-top: 10px;
+      background-color: #1e1e1e;
+      padding: 10px;
+      border-radius: 25px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      width: 30%;
+      background-color: rgb(225, 220, 220);
+      color: rgb(0, 0, 0);
+      margin: 0px 30px;
+      align-self: center;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      color: black;
+      background-color: white;
+    }
+
+    input[type="checkbox"] {
+      width: 3%;
+    }
+
+    option {
+      color: black;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 10vh;
+      width: 100vw;
+      background-color: #25252b;
+    }
+
+    .social a {
+      padding: 10px;
+    }
+
+    .help {
+      width: 60%;
+      height: 100%;
+    }
+
+    textarea {
+      background-color: white;
+      color: black;
+      padding: 10px;
+      border-radius: 10px;
+      width: 70%;
+    }
+  </style>
+</head>
+
+<body bgcolor="#2c2c32">
+  <div class="head">
+    <header>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="contact.html">CONTACT</a><br>
+      </nav>
+    </header>
+  </div>
+  <div class="container" id="home">
+    <fieldset>
+      <legend align="center">Get in Touch</legend>
+      <form action="#" class="content1">
+        <label>Name<label class="red"> *</label></label>
+        <input type="text" placeholder="Enter your name" required>
+        <label>Email<label class="red"> *</label></label>
+        <input type="email" placeholder="Enter your email" required>
+        <label>Country<label class="red"> *</label></label>
+        <select name="Country" id="" placeholder="">
+          <option value="">Select an Country...</option>
+          <option value="">Nepal</option>
+          <option value="">USA</option>
+          <option value="">UK</option>
+          <option value="">India</option>
+          <option value="">China</option>
+        </select>
+        <label>Message</label>
+        <textarea rows="10"></textarea>
+        <div class="check">
+          <input type="checkbox"><label> Subscribe to my promotional emails</label>
+        </div>
+        <br>
+        <div class="btn">
+          <input type="submit" value="SUBMIT">
+          <input type="reset" name="" id="">
+        </div>
+      </form>
+    </fieldset>
+  </div>
+  <footer>
+    <div class="social">
+      <a href="https://www.facebook.com/iamaashifkhan" target="_blank"><img src="fb.png" alt="fb" height="25px"
+          width="25px"></a>
+      <a href="https://www.instagram.com/iamaashifkhan" target="_blank"><img src="insta.png" alt="insta" height="23px"
+          width="23px"></a>
+      <a href="https://www.github.com/iamaashif" target="_blank"><img src="git.png" alt="github" height="25px"
+          width="25px"></a>
+    </div>
+    <div class="copy">
+      <p>&copy; Website made with ♥</p>
+    </div>
+  </footer>
+</body>
+
+</html>
